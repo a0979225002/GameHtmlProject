@@ -1,0 +1,486 @@
+/* index 頁面設定 */
+html, body{
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+    height: 100%;
+}
+body{
+    /* http://www.eion.com.tw/Blogger/?Pid=1117 */
+    /*cursor:更改滑鼠表現樣式 */
+    /* cursor: crosshair; */
+    font-family: Poppins;
+    /* font-family:更改字體幻想字體 */
+    background-color: black;
+    z-index: -1;
+    overflow: hidden;
+}
+.toggle-btn {
+    position: fixed;
+    margin: 10px;
+    padding: 30px;
+    width: 40px;
+    height: 12px;
+    right: 0;
+    z-index: 9999;
+}
+span.one {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+}
+.menu {
+    z-index: 999;
+    position: absolute;
+    background-color: #070606;
+    background-image: url("image/group\ 4.png");
+    height: 100vh;
+    width: 100%;
+    top: -100%;
+}
+.menu img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.data {
+    padding: 8em 0 0 2em;
+    text-align: left;
+}
+.menu ul{
+    list-style: none;
+}
+.menu li:first-child{
+    color: grey;
+    font-family: Poppins;
+    font-size: 24px;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
+}
+.menu li:not(:first-child) {
+    color: #fff;
+    font-size: 42px;
+}
+
+
+span.two {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin-top: 12px;
+}
+
+.system{
+    position: absolute;
+    width: 1200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+#bg{
+    float: left;
+   z-index: -999;
+    position: absolute;
+    width: 1300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.HOME_group{
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.8;
+} 
+.HOME_group01{
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.8;
+}
+.Hex:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.Hexagon01{
+    position: absolute;
+    top: -100px;
+    left: 750px;
+    width: 100px;
+    opacity: 0.7;
+}
+.Hexagon02{
+    position: absolute;
+    top: -150px;
+    left: 830px;
+    width: 100px;
+    opacity: 0.7;
+}
+.Hexagon03{
+    position: absolute;
+    top: -55px;
+    left: 830px;
+    width: 100px;
+    opacity: 0.7;
+}
+.Hexagon04{
+    position: absolute;
+    top: -100px;
+    left: 910px;
+    width: 100px;
+    opacity: 0.7;
+}
+.Hexagon05{
+    position: absolute;
+    top: -10px;
+    left: 910px;
+    width: 100px;
+    opacity: 0.7;
+}
+.news{
+    position: absolute;
+    top: -300px;
+    left:-10xp;
+    background-color: rgb(0, 0, 0,0.4);
+    width: 600px;
+    height: 200px;
+    border-top-style: dotted;
+    border-bottom-style:dotted ;
+    border-color: rgba(253, 253, 253, 0.76);
+    overflow: hidden;
+    opacity:0;
+}
+.news:hover{
+    overflow:auto; 
+    background-color: rgb(0, 0, 0,0.7);
+}
+.news li a{
+    color: rgb(255, 253, 253);
+    font-size: 6px;
+}
+.logo{
+    position: absolute;
+    right: 40%;
+    top: -80px;
+    z-index: 0.7;
+    opacity: 0;
+}
+.content{
+    width: 30%;
+    padding: 50px;
+    z-index: -1;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0.795);
+    border-radius: 30px;
+}
+
+.overlay{
+    overflow: hidden;
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background:rgb(29, 29, 29);
+    background-attachment:fixed;
+    /* background-size :cover; */
+}
+.title  {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+
+.myBtn {
+    font-family: Poppins;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    display: block;
+    padding: 5px 10px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #fff;
+    border: 2px solid #fff;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+
+    transition: 1.5s ease-out;
+}
+.myBtn:hover {
+    color: #101010;
+}
+.myBtn::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.myBtn:hover::before {
+    top: 0;
+}
+.music{
+    position: absolute;
+    top: 350px;
+    left: 102%;
+    transform: translate(-100%,-100%);
+    z-index: 3;
+    opacity: 0;
+}
+/* CHARACTER主頁 CSS */
+.CHARACTER{
+position: absolute;
+top: 50%;
+left: 50%;
+width: 100%;
+height: 100%;
+transform: translate(-50%,-50%);
+background-color: rgb(0, 0, 0);
+
+} 
+.CHARACTER_top{
+position: absolute;
+width: 100%;
+height: 100%;
+bottom: 90%;
+background-color: #000000;
+}
+.CHARACTER_body{
+position: absolute;
+top: 50%;
+left: 50%;
+width: 1400px;
+height: 1200px;
+transform: translate(-50%,-50%);
+background-color: #000000e3;
+}
+.CHARACTER_body p{
+    font-family: Poppins;
+    position: absolute;
+    top:15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 400%;
+    
+}
+.CHARACTER_logo{
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 8%;
+    z-index: 2;
+    opacity: 0;
+}
+.CHARACTER_h1{
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    opacity: 0;
+}
+.CHARACTER_bottom{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 90%;
+background-color: #000000;
+}
+/* CHARACTER主頁腳色 */
+.PGT:hover{
+transition: 0.7s ease-out;
+opacity: 1;
+transform: scale(1.5);
+}
+.PictureGroup01{
+position: absolute;
+top: 350px;
+left: 340px;
+opacity: 0.6;
+z-index: 1;
+}
+.PictureGroup02{
+    position: absolute;
+    top: 350px;
+    left: 500px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup03{
+    position: absolute;
+    top: 350px;
+    left: 660px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup04{
+    position: absolute;
+    top: 350px;
+    left: 820px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup05{
+    position: absolute;
+    top: 350px;
+    left: 970px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup06{
+    position: absolute;
+    top: 500px;
+    left: 340px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup07-1{
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup07-2{
+    position: absolute;
+    top: 500px;
+    left: 660px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup08{
+    position: absolute;
+    top: 500px;
+    left: 820px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup11{
+    position: absolute;
+    top: 500px;
+    left: 970px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup09-1{
+    position: absolute;
+    top: 650px;
+    left: 500px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup09-2{
+    position: absolute;
+    top: 650px;
+    left: 660px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.PictureGroup10{
+    position: absolute;
+    top: 650px;
+    left: 820px;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+/* CHARACTER腳色 CSS */
+.CHARACTER_body01{
+position: absolute;
+left: 50%;
+top: 60%;
+width: 50%;
+transform: translate(-50%,-50%);
+opacity: 0.4;
+z-index: -1;
+}
+.CHARACTER_body01_04{
+position: absolute;
+left: 70%;
+top: 55%;
+}
+.CHARACTER_body01_06{
+position: absolute;
+left: 60%;
+top: 55%;
+}
+.CHARACTER_body01_11{
+position: absolute;
+top: 50%;    
+}
+
+.text_character{
+position: absolute;
+top: 35%;
+left: 50%;
+z-index: 1;
+}
+.group{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width:85%;
+opacity: 0.8;
+}
+.character_01{
+position: absolute;
+top: 55%;
+right: 50%;
+transform: translate(-50%,-50%);
+opacity: 0;
+}
+.character_01_08{
+    position: absolute;
+    left: 12%;
+    }
+    .character_01_10{
+        position: absolute;
+        left: 20%;
+        top: 18%;
+        z-index: -1;
+        opacity: 0.9;
+    }
+    .character_01_11{
+    position: absolute;  
+    top: 20%;  
+    left: 0%;
+    opacity:0;
+    }
+
+.return{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    z-index: 999;
+
+}
