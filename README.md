@@ -2,8 +2,10 @@
 
 網頁設計:
 
+使用技術:HTML,CSS,JavaScript,jQuery,GreenSock
+
 介面Demo
 
-![image](截圖 2020-05-19 上午1.53.56.png)
+![image](DemoImege/imag01.gif)
 
 
